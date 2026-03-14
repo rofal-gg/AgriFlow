@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowongan Kerja - AgriFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+    <div class="demo-badge">⚡ Mode Demo Aktif</div>
+    <nav class="navbar">
+        <a href="index.html" class="logo">🌱 <span>AgriFlow</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="marketplace.html">Pasar Produk</a></li>
+            <li><a href="map.html">Peta Pasokan</a></li>
+            <li><a href="jobs.html" class="active">Lowongan Kerja</a></li>
+            <li><a href="skill.html">Rekomendasi Skill</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Konteks Demo -->
+    <div class="demo-banner">
+        <span class="demo-banner-icon">💼</span>
+        <div>
+            <strong>Pencocokan Kerja Pertanian & Logistik</strong>
+            <span class="demo-banner-sub">Tenaga kerja menemukan peran di sepanjang rantai pasokan agrikultur — dari pekerjaan lapangan hingga cold storage dan distribusi.</span>
+        </div>
+        <a href="dashboard.html" class="demo-banner-next">Berikutnya: Dashboard →</a>
+    </div>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Pencocokan Lowongan Kerja Pertanian & Logistik</h1>
+            <p>Menghubungkan tenaga kerja terampil dengan lowongan terbuka di seluruh rantai pasokan pangan.</p>
+        </div>
+
+        <div class="stats-row">
+            <div class="card stat-card">
+                <h3>Total Lowongan</h3>
+                <p id="stat-jobs">0</p>
+            </div>
+            <div class="card stat-card">
+                <h3>Total Perusahaan</h3>
+                <p id="stat-companies">0</p>
+            </div>
+            <div class="card stat-card">
+                <h3>Total Kota</h3>
+                <p id="stat-locations">0</p>
+            </div>
+        </div>
+
+        <!-- Highlight Demo: Filter -->
+        <div class="demo-highlight">
+            <div class="demo-highlight-label">✨ Fitur Utama</div>
+            <div class="filter-bar">
+                <select id="location-filter" class="form-control filter-select">
+                    <option value="all">📍 Semua Kota</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Malang">Malang</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Makassar">Makassar</option>
+                    <option value="Brebes">Brebes</option>
+                </select>
+                <select id="sector-filter" class="form-control filter-select">
+                    <option value="all">💼 Semua Sektor</option>
+                    <option value="logistics">Logistik</option>
+                    <option value="warehouse">Gudang</option>
+                    <option value="distribution">Distribusi</option>
+                    <option value="field">Lapangan</option>
+                    <option value="admin">Administrasi</option>
+                    <option value="packaging">Pengemasan</option>
+                </select>
+            </div>
+            <div class="demo-callout">💡 Cocokkan dengan lowongan pertanian dan logistik di wilayahmu — filter berdasarkan kota atau sektor pekerjaan.</div>
+        </div>
+
+        <div id="job-skeleton" class="grid">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </div>
+
+        <div class="grid" id="job-grid" style="display:none;"></div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

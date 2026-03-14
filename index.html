@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriFlow - Platform Ekosistem Digital Pertanian</title>
+    <meta name="description" content="AgriFlow menghubungkan petani, jaringan distribusi pangan, dan pencari kerja di sektor pertanian dan logistik.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+    <!-- Lencana Mode Demo -->
+    <div class="demo-badge">⚡ Mode Demo Aktif</div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">🌱 <span>AgriFlow</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="marketplace.html">Pasar Produk</a></li>
+            <li><a href="map.html">Peta Pasokan</a></li>
+            <li><a href="jobs.html">Lowongan Kerja</a></li>
+            <li><a href="skill.html">Rekomendasi Skill</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <header class="hero">
+        <div class="hero-eyebrow">🌾 Platform Pertanian Digital Indonesia</div>
+        <h1>Ketahanan Pangan Dimulai<br>dari Koneksi yang Lebih Baik</h1>
+        <p>Jutaan ton pangan hilang setiap tahun akibat rantai pasokan yang terfragmentasi, sementara petani kurang penghasilan dan tenaga kerja sulit menemukan pekerjaan. <strong>AgriFlow</strong> menutup celah itu — menghubungkan petani, distributor, dan pencari kerja dalam satu platform terpadu.</p>
+        <div class="hero-actions">
+            <a href="marketplace.html" class="btn btn-primary btn-lg">🛒 Jelajahi Produk</a>
+            <a href="map.html" class="btn btn-secondary btn-lg">🗺️ Lihat Peta Pasokan</a>
+            <a href="jobs.html" class="btn btn-ghost btn-lg">💼 Cari Lowongan</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat"><span class="hero-stat-num">8</span><span class="hero-stat-label">Produk Pertanian</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-num">8</span><span class="hero-stat-label">Lowongan Kerja</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-num">6</span><span class="hero-stat-label">Wilayah Dipetakan</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-num">5</span><span class="hero-stat-label">Modul Platform</span></div>
+        </div>
+    </header>
+
+    <!-- ── STRIP MASALAH → SOLUSI ── -->
+    <section class="problem-strip">
+        <div class="problem-strip-inner">
+            <div class="problem-item">
+                <span class="problem-icon">⚠️</span>
+                <div>
+                    <strong>Rantai Pasokan Terfragmentasi</strong>
+                    <p>Petani dan pembeli beroperasi secara terpisah, menyebabkan lonjakan harga dan pemborosan pangan.</p>
+                </div>
+            </div>
+            <div class="problem-arrow">→</div>
+            <div class="problem-item problem-item--solution">
+                <span class="problem-icon">✅</span>
+                <div>
+                    <strong>Pasar Produk AgriFlow</strong>
+                    <p>Transaksi langsung petani ke pembeli, visibilitas stok real-time, harga transparan dan adil.</p>
+                </div>
+            </div>
+            <div class="problem-arrow">+</div>
+            <div class="problem-item problem-item--solution">
+                <span class="problem-icon">✅</span>
+                <div>
+                    <strong>Peta Pasokan & Permintaan</strong>
+                    <p>Visibilitas regional real-time untuk menyalurkan pangan ke area yang paling membutuhkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PANDUAN DEMO ── -->
+    <main class="container">
+        <div class="demo-flow-header">
+            <span class="demo-flow-tag">📋 Panduan Demo</span>
+            <h2>Ikuti Alur Cerita AgriFlow</h2>
+            <p>Jelajahi modul berikut secara berurutan untuk memahami bagaimana AgriFlow menyelesaikan tantangan ketahanan pangan nasional dari ujung ke ujung.</p>
+        </div>
+
+        <div class="demo-flow-cards">
+            <a href="marketplace.html" class="demo-flow-card reveal">
+                <span class="demo-flow-step">01</span>
+                <div class="demo-flow-icon">🛒</div>
+                <h3>Pasar Produk Pertanian</h3>
+                <p>Jelajahi produk yang dijual langsung dari petani terverifikasi di seluruh Indonesia — stok real-time, harga adil.</p>
+                <span class="demo-flow-cta">Lihat Produk →</span>
+            </a>
+
+            <a href="map.html" class="demo-flow-card reveal">
+                <span class="demo-flow-step">02</span>
+                <div class="demo-flow-icon">🗺️</div>
+                <h3>Peta Pasokan & Permintaan</h3>
+                <p>Lihat wilayah mana yang memiliki produksi surplus dan kota mana yang memiliki permintaan tertinggi.</p>
+                <span class="demo-flow-cta">Buka Peta →</span>
+            </a>
+
+            <a href="jobs.html" class="demo-flow-card reveal">
+                <span class="demo-flow-step">03</span>
+                <div class="demo-flow-icon">💼</div>
+                <h3>Pencocokan Lowongan Kerja</h3>
+                <p>Cocokkan tenaga kerja pertanian dan logistik dengan lowongan yang tersedia di sepanjang rantai pasokan pangan.</p>
+                <span class="demo-flow-cta">Cari Lowongan →</span>
+            </a>
+
+            <a href="skill.html" class="demo-flow-card reveal">
+                <span class="demo-flow-step">04</span>
+                <div class="demo-flow-icon">🎯</div>
+                <h3>Rekomendasi Skill</h3>
+                <p>Bantu pencari kerja memahami skill apa yang dibutuhkan sebelum melamar posisi di bidang pertanian.</p>
+                <span class="demo-flow-cta">Cek Skill →</span>
+            </a>
+
+            <a href="dashboard.html" class="demo-flow-card reveal">
+                <span class="demo-flow-step">05</span>
+                <div class="demo-flow-icon">📊</div>
+                <h3>Dashboard Analitik</h3>
+                <p>Pantau data pasokan pangan, distribusi kerja, dan kinerja produksi regional — semuanya dalam satu tampilan.</p>
+                <span class="demo-flow-cta">Lihat Dashboard →</span>
+            </a>
+        </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
